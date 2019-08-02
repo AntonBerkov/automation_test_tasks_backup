@@ -15,7 +15,7 @@ public class Main {
                 this.add(5);
             }
         };
-       Summing summing = new Summing();
-       summing.sum(originalSet);
+       Sum sum = new Sum();
+       sum.sum(originalSet);
     }
 }

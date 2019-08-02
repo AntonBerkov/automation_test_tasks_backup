@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Summing {
+public class Sum {
 
     public void sum(Set<Integer> originalSet){
         Set<Integer> resultSet = new LinkedHashSet<>();

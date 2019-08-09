@@ -22,7 +22,6 @@ public class Sum {
             while (mesneSetIterator.hasNext()) {
                 if (originalSetIterator.hasNext()) {
                     resultSet.add(mesneSetIterator.next() + originalSetIterator.next());
-
                 }
             }
             originalSet.removeAll(originalSet);

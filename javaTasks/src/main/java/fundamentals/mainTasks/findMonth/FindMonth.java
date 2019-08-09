@@ -1,4 +1,4 @@
-package fundamentals.optionalTask;
+package fundamentals.mainTasks.findMonth;
 
 import java.util.Scanner;
 

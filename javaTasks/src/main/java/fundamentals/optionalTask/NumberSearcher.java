@@ -1,13 +1,10 @@
 package fundamentals.optionalTask;
 
-import java.util.Arrays;
-import java.util.List;
+        import java.util.List;
 
 public class NumberSearcher {
 
-    public void searchForBiggestAndSmallestNumber(String numbers) {
-        List<String> numberList = Arrays.asList(numbers.split(" "));
-        System.out.println(numberList);
+    public void searchForBiggestAndSmallestNumber(List<String> numberList) {
         int minLength = numberList.get(0).length();
         int maxLength = minLength;
         String minNumber = numberList.get(0);
@@ -25,5 +22,19 @@ public class NumberSearcher {
         }
         System.out.println("Самое длинное число " + maxNumber + " " + "Длина: " + (maxLength));
         System.out.println("Самое короткое число " + minNumber + " " + "Длина: " + (minLength));
+    }
+
+    public void searchForMoreThanAverageLength(List<String> numberList) {
+        int sumLenght = 0;
+        for (String number : numberList) {
+            sumLenght += number.length();
+        }
+        double averageLength = sumLenght / numberList.size();
+        System.out.println("Числа, длина которых больше средней длины по всем числам");
+        for (String number : numberList) {
+            if (number.length() > averageLength) {
+                System.out.println("Число " + number + " Длина: " + number.length());
+            }
+        }
     }
 }

@@ -3,12 +3,12 @@ package fundamentals.mainTasks.findMonth;
 import java.util.Scanner;
 
 public class FindMonth {
-   public void searchMonth() {
+    public void searchMonth() {
         Scanner inputNumber = new Scanner(System.in);
         System.out.print("Введите число от 1 до 12: ");
         String line = inputNumber.nextLine();
         int number = 0;
-        if (line.charAt(0)!='0') {
+        if (line.charAt(0) != '0') {
             number = Integer.parseInt(line);
         } else {
             errorMessage();

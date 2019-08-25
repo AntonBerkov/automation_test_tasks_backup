@@ -1,0 +1,7 @@
+|---westerns
+|     1 Fistful of Dollars.avi
+|     2 The Good, the Bad and the Ugly.avi
+|---actions
+|     1 First Blood.avi
+|     2 Predator.avi
+|     3 Kill Bill.avi

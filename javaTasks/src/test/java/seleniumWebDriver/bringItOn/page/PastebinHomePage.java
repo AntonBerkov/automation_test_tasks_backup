@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class PastebinHomePage extends AbsractPage {
+public class PastebinHomePage extends AbstractPage {
 
     private static final String HOMEPAGE_URL = "https://pastebin.com";
     @FindBy(xpath = "//*[@id= 'paste_code']")
@@ -32,7 +32,7 @@ public class PastebinHomePage extends AbsractPage {
     }
 
     public PastebinHomePage sendContent(List<String> code, String titleContent) {
-        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(pasteCode));
+   //     new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(pasteCode));
         for (String i : code) {
             pasteCode.sendKeys(i);
         }

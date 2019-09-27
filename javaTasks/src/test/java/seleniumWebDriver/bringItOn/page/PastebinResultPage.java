@@ -9,15 +9,14 @@ import java.util.stream.Collectors;
 
 import java.util.List;
 
-public class PastebinResultPage extends AbsractPage {
+public class PastebinResultPage extends AbstractPage {
 
     public PastebinResultPage(WebDriver driver) {
         super(driver);
     }
 
     public String searchTitle() {
-        WebElement title = driver.findElement(By.xpath("//*[@class='paste_box_line1']"));
-        return title.getText();
+        return driver.findElement(By.xpath("//*[@class='paste_box_line1']")).getText();
     }
 
     public List<String> searchCode() {

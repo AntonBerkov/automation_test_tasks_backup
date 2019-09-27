@@ -18,7 +18,6 @@ public class WebDriverPastebinTest {
     private WebDriver driver;
     private PastebinResultPage resultPage;
 
-
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
         driver = new ChromeDriver();

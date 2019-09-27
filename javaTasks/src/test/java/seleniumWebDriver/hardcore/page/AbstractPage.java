@@ -1,13 +1,12 @@
-package seleniumWebDriver.bringItOn.page;
+package seleniumWebDriver.hardcore.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public abstract class AbsractPage {
-
+public abstract class AbstractPage {
     protected WebDriver driver;
 
-    public AbsractPage(WebDriver driver) {
+    public AbstractPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

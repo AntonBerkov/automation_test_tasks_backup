@@ -46,6 +46,7 @@ public class CalculatorPage extends AbstractPage {
         selectGpu.get(6).click();
         componentWaiter(By.id(gpuTypeOption)).click();
         List<WebElement> selectIconsAfterGpu = driver.findElements(By.xpath(iconXpath));
+
         selectIconsAfterGpu.get(7).click();
         componentWaiter(By.id(localSsdOption)).click();
         selectIconsAfterGpu.get(8).click();

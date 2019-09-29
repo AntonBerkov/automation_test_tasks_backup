@@ -1,0 +1,10 @@
+Started on 29.09.2019 13:36:00
+Using strategy: Default
+[poll] Last Built Revision: Revision 446ae5a4fb9798821be65628da0b587e4e1f04e3 (refs/remotes/origin/master)
+No credentials specified
+ > git.exe --version # timeout=10
+ > git.exe ls-remote -h https://github.com/vitalliuss/helloci # timeout=10
+Found 7 remote heads on https://github.com/vitalliuss/helloci
+[poll] Latest remote head revision on refs/heads/master is: 446ae5a4fb9798821be65628da0b587e4e1f04e3 - already built by 52
+Done. Took 1,1 секунды
+No changes
